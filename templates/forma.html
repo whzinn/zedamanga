@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Importações do Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+      #zedamanga{
+          text-align: center;
+      }
+      .custom-width {
+    width: 100%; /* Defina a largura desejada em pixels */
+    border-radius: 200px;
+}
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 mb-3 mb-md-0">
+        <div id="zedamanga">
+    
+    </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">            <img id="imagem" width="20px" height="20px" src="https://devtools.com.br/img/pix/logo-pix-png-icone-520x520.png"> Pix</h5>
+          <h2 class="card-text">Pague instantaneamente usando o Pix, uma forma de pagamento rápida e segura.</h2>
+          <a href="/pagar/{{uid}}" class="btn btn-primary custom-width">Pagar</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Pagar com Boleto</h5>
+          <p class="card-text">Pague com dinheiro vivo em qualquer instituicão bancaria, com a funcão boleto.</p>
+          <a href="#" class="btn btn-secondary">Escolher</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

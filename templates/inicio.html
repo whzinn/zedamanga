@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carteira</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+    body{ 
+    background-color: white;
+    text-align:center;
+    }
+    .imgddd {
+            border-radius:5px;
+        }
+    .row {
+        padding:20px;
+    }
+    </style>
+</head>
+<body>
+<p>Seja bem vindo {{name}}</p>
+<div class="container mt-5">
+    
+    <div class="row">
+
+        <div class="col-md-6 mx-auto">
+            <p>
+                        <img class="imgddd" src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Anarcho-capitalist_flag_AC.png" width="50" height="50">
+
+                <span class="label">Saldo disponivel
+                <h1>R$ {{saldo}}</h1>
+            </p>
+            <a href="/gerar/{{user}}" class="btn btn-primary">Gerar Link de Pagamento</a>
+            <a href="/enviar" class="btn btn-success">Transferir dinheiro</a>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
